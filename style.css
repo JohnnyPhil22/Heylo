@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding-top: 120px;
+}
+
+header {
+    background: #d7d7d7;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: padding 0.3s ease, font-size 0.3s;
+}
+
+header.shrink {
+    padding: 0.5rem;
+    font-size: medium;
+    background: none;
+    transition: 0.1s ease;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav svg {
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+header.shrink nav svg {
+    width: 200px;
+    height: 80px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a,
+header ul li button {
+    text-decoration: none;
+}
+
+header ul li button {
+    margin: 0;
+    font-size: large;
+}
+
+header.shrink ul li button {
+    margin: 0;
+    font-size: medium;
+}
+
+section {
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label,
+form input {
+    margin: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+}

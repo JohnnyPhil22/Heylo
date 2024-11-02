@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Heylo - Find Your Meeting Spot</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+        />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <svg width="200" height="80">
+                    <defs>
+                        <linearGradient
+                            id="gradient1"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="0%"
+                        >
+                            <stop
+                                offset="0%"
+                                style="stop-color: #bc3cc5; stop-opacity: 1"
+                            />
+                            <stop
+                                offset="100%"
+                                style="stop-color: #0b96f2; stop-opacity: 1"
+                            />
+                        </linearGradient>
+                    </defs>
+                    <text
+                        x="50%"
+                        y="50%"
+                        text-anchor="middle"
+                        dominant-baseline="middle"
+                        font-size="4rem"
+                        font-weight="900"
+                        fill="url(#gradient1)"
+                        paint-order="stroke"
+                    >
+                        Heylo
+                    </text>
+                </svg>
+                <ul>
+                    <li><a onclick="index.html">Home</a></li>
+                    <li><a onclick="scrollToFeatures();">Features</a></li>
+                    <li>
+                        <button onclick="redirectToSignup();">
+                            Sign Up / Login
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Welcome to Heylo</h2>
+            <p>Your app for finding the perfect meetup spot!</p>
+            <button onclick="redirectToSignup();">Get Started</button>
+        </section>
+        <div style="height: 2000px;"></div>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Login/Signup with email or social media</li>
+                <li>Nearest Meeting Point Calculation</li>
+                <li>Real-Time Traffic Updates</li>
+                <li>Venue Suggestions and Reviews</li>
+                <li>Event Scheduling and Notifications</li>
+            </ul>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
