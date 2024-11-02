@@ -1,9 +1,13 @@
-function redirectToSignup() {
-    window.location.href = "signup.html";
+function scrollToHome() {
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
 }
 
 function scrollToFeatures() {
     document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+}
+
+function redirectToSignup() {
+    window.location.href = "signup.html";
 }
 
 function handleLogin() {
