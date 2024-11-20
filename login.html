@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Create an Account</title>
+        <title>Login</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -49,33 +49,15 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
-                        <button onclick="redirectToLogin();">Login</button>
+                        <button onclick="redirectToSignUp();">Sign Up</button>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <div class="form-container">
-            <p class="title">Sign Up</p>
+            <p class="title">Login</p>
             <form class="form">
-                <div class="input-group">
-                    <label for="firstname">First Name</label>
-                    <input
-                        type="text"
-                        name="firstname"
-                        id="firstname"
-                        placeholder=""
-                    />
-                </div>
-                <div class="input-group">
-                    <label for="surname">Surname</label>
-                    <input
-                        type="text"
-                        name="surname"
-                        id="surname"
-                        placeholder=""
-                    />
-                </div>
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input
@@ -93,9 +75,14 @@
                         id="password"
                         placeholder=""
                     />
+                    <div class="forgot">
+                        <a rel="noopener noreferrer" href="#"
+                            >Forgot Password?</a
+                        >
+                    </div>
                 </div>
-                <button type="submit " class="sign" onclick="handleSignUp();">
-                    Sign Up
+                <button type="submit " class="sign" onclick="handleLogin();">
+                    Sign in
                 </button>
             </form>
             <div class="social-message">
@@ -150,8 +137,8 @@
                 </button>
             </div>
             <p class="signup">
-                Have an account?
-                <a href="login.html">Login</a>
+                Don't have an account?
+                <a href="signup.html">Sign up</a>
             </p>
         </div>
 

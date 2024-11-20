@@ -10,6 +10,10 @@
             href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
         />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
     </head>
     <body>
         <header>
@@ -47,17 +51,35 @@
                     </text>
                 </svg>
                 <ul>
-                    <li><a onclick="scrollToHome();">Home</a></li>
-                    <li><a onclick="scrollToFeatures();">Features</a></li>
-                    <li>
-                        <button onclick="redirectToLogin();">Login</button>
+                    <li class="notification-container">
+                        <button
+                            class="notification-btn"
+                            style="background-color: #d7d7d7; padding-right: 0"
+                        >
+                            <i
+                                class="fa-solid fa-bell"
+                                style="color: #000000"
+                            ></i>
+                            <span class="notification-count">0</span>
+                        </button>
+                        <div class="notification-popup">
+                            <h3>Notifications</h3>
+                            <ul>
+                                <li>Notification 1</li>
+                                <li>Notification 2</li>
+                                <li>Notification 3</li>
+                            </ul>
+                        </div>
                     </li>
+                    <li><a onclick="scrollToHome();">Profile</a></li>
+                    <li><a onclick="scrollToFeatures();">Find Location</a></li>
+                    <li><a onclick="scrollToFeatures();">Reservations</a></li>
                 </ul>
             </nav>
         </header>
 
         <section id="home">
-            <h2>Welcome to Heylo</h2>
+            <h2>Profile</h2>
             <p>Your app for finding the perfect meetup spot!</p>
             <button onclick="redirectToSignUp();">Get Started</button>
         </section>
